@@ -1,3 +1,18 @@
+Application screenshots:-
+Sign Up Page
+![image](https://github.com/user-attachments/assets/03dcef14-3e48-4df3-9644-ee92ceab968b)
+
+Sign Up Page validation page 
+![image](https://github.com/user-attachments/assets/bb7a09db-5929-488c-9cc3-3271d4f45a59)
+
+
+Sign In Page 
+![image](https://github.com/user-attachments/assets/96704e25-4e19-4655-8168-a30a79ce4f48)
+
+Application Page
+![image](https://github.com/user-attachments/assets/cfbc3bac-3bc5-4a46-b98d-02e89602d6c9)
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
