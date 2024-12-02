@@ -30,6 +30,15 @@ const SignInForm = () => {
 
     return (
         <div className="relative w-full max-w-md mx-auto mt-6">
+            <div className="flex justify-center mb-4">
+                <Link to="/">
+                    <img
+                        src="https://assets.easygenerator.com/fragment/auth-page/2024.09.20.master-1580d78a0f/fe2d0604cd7c37cb56fba71cae72c2e6.svg"
+                        alt="easygenerator logo"
+                        style={{ height: '40px' }}
+                    />
+                </Link>
+            </div>
             <form
                 onSubmit={handleSubmit}
                 className="bg-white p-6 rounded-md shadow-lg space-y-4"
