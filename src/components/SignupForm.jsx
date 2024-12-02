@@ -6,14 +6,12 @@ import Toast from '../components/Toast';
 const SignUpForm = () => {
     const { signUp, loading } = useAuth();
     const [formData, setFormData] = useState({ email: '', name: '', password: '' });
-    const [errors, setErrors] = useState({}); // State to track validation errors
+    const [errors, setErrors] = useState({});
     const navigate = useNavigate();
     const [toast, setToast] = useState(null);
 
     const handleChange = (e) => {
         setFormData({ ...formData, [e.target.name]: e.target.value });
-
-        // Clear the error for the field being updated
         setErrors((prevErrors) => ({
             ...prevErrors,
             [e.target.name]: '',
@@ -22,33 +20,28 @@ const SignUpForm = () => {
 
     const validateForm = () => {
         const newErrors = {};
-
         if (!formData.email.trim()) {
             newErrors.email = 'Email is required.';
         } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
             newErrors.email = 'Invalid email format.';
         }
-
         if (!formData.name.trim()) {
             newErrors.name = 'Name is required.';
         }
-
         if (!formData.password.trim()) {
             newErrors.password = 'Password is required.';
         } else if (formData.password.length < 8) {
             newErrors.password = 'Password must be at least 8 characters.';
         }
-
         setErrors(newErrors);
-        return Object.keys(newErrors).length === 0; // Return true if no errors
+        return Object.keys(newErrors).length === 0;
     };
 
     const handleSubmit = async (e) => {
         e.preventDefault();
         if (!validateForm()) {
-            return; // Stop submission if validation fails
+            return;
         }
-
         try {
             const result = await signUp(formData.email, formData.name, formData.password);
             if (result) {
@@ -62,13 +55,23 @@ const SignUpForm = () => {
     };
 
     return (
-        <div className="relative w-full max-w-md mx-auto mt-6">
+            <div className="relative w-full max-w-lg mx-auto mt-6">
+            {/* Logo */}
+            <div className="flex justify-center mb-4">
+                <Link to="/">
+                    <img
+                        src="https://assets.easygenerator.com/fragment/auth-page/2024.09.20.master-1580d78a0f/fe2d0604cd7c37cb56fba71cae72c2e6.svg"
+                        alt="easygenerator logo"
+                        style={{ height: '40px' }}
+                    />
+                </Link>
+            </div>
+
             <form
                 onSubmit={handleSubmit}
                 className="bg-white p-6 rounded-md shadow-lg space-y-4"
             >
-                <h2 className="text-2xl font-semibold text-center">Sign Up</h2>
-
+                <h2 className="text-4xl font-bold text-center">Sign Up</h2>
                 {/* Email Field */}
                 <div>
                     <label className="block mb-1 text-sm font-medium">Email</label>
