@@ -1,6 +1,7 @@
 Application screenshots:-
 Sign Up Page
-<img width="952" alt="image" src="https://github.com/user-attachments/assets/443e37c0-b985-4a8b-8c35-72a652c77f1a">
+<img width="952" alt="image" src="https://github.com/user-attachments/assets/bec93f0e-c2d5-4f19-95b2-3f770423a4fd">
+
 
 
 Sign Up Page validation page 
