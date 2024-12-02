@@ -1,16 +1,18 @@
 import React, { useState } from 'react';
 import Toast from '../components/Toast';
-import SigninForm from "../components/SigninForm"; // Import the reusable Toast component
+import SigninForm from "../components/SigninForm";
+import Background from '../components/Background'; // Import Background component
 
 const SigninPage = () => {
-    const [toast, setToast] = useState(null); // Manage toast state
+    const [toast, setToast] = useState(null);
 
     const handleToast = (message, type) => {
-        setToast({ message, type }); // Trigger toast
+        setToast({ message, type });
     };
 
     return (
-        <div className="min-h-screen bg-gray-100 flex items-center justify-center relative">
+        <div
+            className="relative min-h-screen bg-gradient-to-r from-orange-100 to-orange-500 flex items-center justify-center">
             {/* Pass the handleToast function to the SigninForm */}
             <SigninForm onToast={handleToast} />
 
@@ -19,7 +21,7 @@ const SigninPage = () => {
                 <Toast
                     message={toast.message}
                     type={toast.type}
-                    onClose={() => setToast(null)} // Remove toast after it's closed
+                    onClose={() => setToast(null)}
                 />
             )}
         </div>
