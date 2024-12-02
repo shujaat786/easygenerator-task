@@ -4,11 +4,16 @@ Sign Up Page
 
 
 Sign Up Page validation page 
-![image](https://github.com/user-attachments/assets/bb7a09db-5929-488c-9cc3-3271d4f45a59)
+<img width="955" alt="image" src="https://github.com/user-attachments/assets/ac0d2499-5612-4add-b78f-c5c3458a9f86">
+
 
 
 Sign In Page 
-![image](https://github.com/user-attachments/assets/96704e25-4e19-4655-8168-a30a79ce4f48)
+<img width="952" alt="image" src="https://github.com/user-attachments/assets/dfff2c2f-7196-46e1-a695-2580c710bcde">
+
+Toast Messages-
+invalid credentials
+<img width="483" alt="image" src="https://github.com/user-attachments/assets/717170c1-6c4d-410c-9c2b-463449bc3a78">
 
 Application Page
 ![image](https://github.com/user-attachments/assets/cfbc3bac-3bc5-4a46-b98d-02e89602d6c9)
